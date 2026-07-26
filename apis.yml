@@ -1,7 +1,15 @@
 aid: ecog
 name: EcoG
-description: EcoG is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  EcoG is a Munich-based technology company that builds the software and hardware platform powering
+  electric-vehicle DC fast chargers. Its EcoG OS operating system, Universal Core platform, and
+  controllers let charger manufacturers, charge point operators (CPOs), and EV businesses design,
+  launch, and scale DC charging solutions with reduced complexity, claiming more than 15% market
+  share in Europe with operations across India and North America. For developers, EcoG OS exposes an
+  on-device programmatic surface (an OpenAPI-based application interface, a local web interface, and
+  the LifeC remote management tool) so smart value-added charging applications can be built and run at
+  the device level. This profile was surfaced as a Techstars portfolio company and enriched from
+  EcoG's public website; it publishes no public REST API developer portal or specification.
 url: https://raw.githubusercontent.com/api-evangelist/ecog/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +17,30 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://ecog.io/hubfs/Feature_Main.png
 tags:
 - Company
+- EV Charging
+- Electric Vehicles
+- Charging Infrastructure
+- Energy
+- Internet of Things
+- Embedded Systems
+- Mobility
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ecog-domain-security.yml
 - type: Website
   url: https://ecog.io/
+- type: DeveloperPortal
+  url: https://ecog.io/for-developers
+- type: Blog
+  url: https://ecog.io/resources/blog
+- type: Support
+  url: https://ecog.io/contact-us
+- type: PrivacyPolicy
+  url: https://ecog.io/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/18142674/
+- type: Twitter
+  url: https://twitter.com/ecog_io
+- type: YouTube
+  url: https://www.youtube.com/channel/UCQ2I_hWVAZJcXFn553VMc1A
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
